@@ -44,20 +44,34 @@ const aboutPageDiv = document.getElementById("about-p");
 var clickCheck = document.getElementById("navbar");
 clickCheck.addEventListener('click', e => {
   e.preventDefault();
-  switch (e.target.id) {
-    case "home-l":
-      homePageDiv.scrollIntoView();
-      break;
-    case "work-l":
-      workPageDiv.scrollIntoView();
-      break;
-    case "blog-l":
-      blogPageDiv.scrollIntoView();
-      break;
-    case "about-l":
-      aboutPageDiv.scrollIntoView();
-      break;
-    default:
-      break;
+
+  if(e.target.id == "home-l"){
+    homePageDiv.scrollIntoView();
+
+  }else if(e.target.id == "work-l"){
+    workPageDiv.scrollIntoView();
+
+  }else if(e.target.id == "blog-l"){
+    blogPageDiv.scrollIntoView();
+
+  }else if(e.target.id == "about-l"){
+    aboutPageDiv.scrollIntoView();
+
   }
+  // switch (e.target.id) {
+  //   case "home-l":
+  //     homePageDiv.scrollIntoView();
+  //     break;
+  //   case "work-l":
+  //     workPageDiv.scrollIntoView();
+  //     break;
+  //   case "blog-l":
+  //     blogPageDiv.scrollIntoView();
+  //     break;
+  //   case "about-l":
+  //     aboutPageDiv.scrollIntoView();
+  //     break;
+  //   default:
+  //     break;
+  // }
 });
